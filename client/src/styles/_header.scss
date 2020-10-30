@@ -24,7 +24,18 @@ header {
           .links {
             margin-right: 2rem;
             color: orange;
-          text-decoration: none;
+            text-decoration: none;
+            font-family: 'Oswald', sans-serif;
+            font-weight: normal;
+             padding: 0 0.75rem;
+             border-radius: 0.5rem;
+            &:hover {
+              color: black;
+              background-color: orange;
+              border: 1px solid orange;
+              padding: 0 0.75rem;
+              border-radius: 0.5rem;
+            }
         }
         }
       }
