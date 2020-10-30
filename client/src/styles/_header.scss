@@ -1,0 +1,25 @@
+header {
+  background-color: black;
+  padding: 1.25rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  h1 {
+    color: white;
+    margin: 0;
+    nav {
+      ul {
+        margin-right: 4rem;
+        list-style: none;
+        display: flex;
+        li {
+          margin-right: 2rem;
+          text-decoration: none;
+          a {
+            color: orange;
+          }
+        }
+      }
+    }
+  }
+}

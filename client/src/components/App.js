@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Switch, BrowserRouter, Route } from 'react-router-dom';
+
+// pages
+import Home from '../pages/home.js';
+import Collection from '../pages/collection.js';
+import Playlist from '../pages/playlist.js';
+import ErrorPage from '../pages/error.js';
+
+// UI components
+import Header from './header.js';
+import Footer from './footer.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <BrowserRouter>
+        <Header />
+        <Switch>
+          <Route exact path="/home" component={Home} />
+          {/*  <Route path="/collection/new" component={NewStudent} />
+          <Route path="/collection/:id/edit" component={EditStudent} />
+          <Route path="/collection/:id" component={ShowStudent} /> */}
+          <Route path="/collection" component={Collection} />
+          <Route path="/playlist" component={Playlist} />
+          <Route path="/*" component={ErrorPage} />
+        </Switch>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
