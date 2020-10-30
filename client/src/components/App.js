@@ -8,8 +8,8 @@ import Playlist from '../pages/playlist.js';
 import ErrorPage from '../pages/error.js';
 
 // UI components
-import Header from './header.js';
 import Footer from './footer.js';
+import Header from '../components/header.js';
 
 function App() {
   return (

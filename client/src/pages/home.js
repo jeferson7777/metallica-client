@@ -1,10 +1,14 @@
 import React from 'react';
 
+
 const Home = () => {
   return (
-    <main className="page home">
-      <h2>Home page</h2>
-    </main>
+    <>
+      <main className="container home">
+        <div className="albums">
+        </div>
+      </main>
+      </>
   );
 };
 

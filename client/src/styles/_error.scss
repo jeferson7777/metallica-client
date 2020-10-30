@@ -1,12 +1,9 @@
-.page {
+.error {
+  min-height: 80vh;
   flex: 1 auto;
   padding: 0 1.25rem;
-
-  &.error {
-    animation: flash 1s infinite alternate linear;
+  animation: flash 1s infinite alternate linear;
   }
-}
-
 @keyframes flash {
   to {
     background-color: red;
