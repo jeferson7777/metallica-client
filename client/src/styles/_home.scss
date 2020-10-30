@@ -1,7 +1,7 @@
 .home{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   min-height: 90vh;
   color: white;
@@ -9,10 +9,54 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-    .albums {
-      width: 55vw;
-      min-height: 60vh;
-      background-color: rgba(32, 12, 73, 0.5);
-      border-radius: 0.5rem;
-}
+      .left {
+            width: 15vw;
+            min-height: 10vh;
+            background-color: rgba(122, 120, 126, 0.3);
+            border-radius: 0.5rem;
+            padding: 0.25rem;
+            display: flex;
+            align-items: center;
+            h4 {
+              font-size: 0.75rem;
+              font-weight: normal;
+              text-align: center;
+              font-family: 'Oswald', sans-serif;
+            }
+      }
+      .albums {
+            width: 55vw;
+            min-height: 60vh;
+            background-color: rgba(32, 12, 73, 0.5);
+            border-radius: 0.5rem;
+      }
+      .right {
+            width: 15vw;
+            min-height: 10vh;
+            background-color: rgba(122, 120, 126, 0.3);
+            border-radius: 0.5rem;
+            padding: 0.25rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h4 {
+              font-size: 0.75rem;
+              text-align: center;
+              font-family: 'Oswald', sans-serif;
+              font-weight: normal;
+
+            }
+            .go {
+              margin-left: 1rem;
+              background-color: black;
+              color: white;
+              border-radius: 100%;
+              width: 2rem;
+              height: 2rem;
+              text-align: center;
+              border: 2px solid white;
+
+
+            }
+      }
 }
