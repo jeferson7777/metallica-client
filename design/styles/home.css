@@ -1,0 +1,52 @@
+
+* {
+  box-sizing: border-box;
+}
+/* para que tome el width desde el borde de la caja.*/
+
+body {
+  font-size: 100%;
+  background-image: url("/assets/pics/backgrounds/blue_flames2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+}
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+picture {
+  display: block;
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.logo {
+  width: 30vw;
+  margin-right: 10vw;
+}
+nav ul {
+  display: flex;
+  margin-right: 3rem;
+}
+nav ul li {
+  margin-right: 2rem;
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: orange;
+  font-size: 0.75rem;
+}
+nav ul li a:hover {
+  text-decoration: none;
+  color: orange;
+  font-size: 0.75rem;
+  bore
+}

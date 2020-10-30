@@ -1,1 +1,1 @@
-# This is the readme file from thre client app.
+# This is the readme file from the client app.
