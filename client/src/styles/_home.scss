@@ -5,7 +5,7 @@
   align-items: center;
   min-height: 90vh;
   color: white;
-  background-image: url('../assets/pics/backgrounds/blue_flames2.png');
+  background-image: url('../assets/backgrounds/blue_flames2.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -24,11 +24,40 @@
               font-family: 'Oswald', sans-serif;
             }
       }
-      .albums {
-            width: 55vw;
+      .wrapper-album {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+
+            width: 60vw;
             min-height: 60vh;
             background-color: rgba(32, 12, 73, 0.5);
             border-radius: 0.5rem;
+              .album {
+                max-width: 15vw;
+                max-height: 20vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: baseline;
+                align-items: center;
+                padding: 1rem 1rem;
+                h5 {
+                  padding: 0;
+                  margin: 0;
+                  margin-top: 0.5rem;
+                  font-family: 'Oswald', sans-serif;
+                  font-weight: 300;
+                }
+              }
+            .pict {
+              width: 10vw;
+              height: 10vw;
+              background-image: url('../assets/albums/killem_all.png');
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+              padding: 0.25rem;
+            }
       }
       .right {
             width: 15vw;
@@ -44,19 +73,19 @@
               text-align: center;
               font-family: 'Oswald', sans-serif;
               font-weight: normal;
-
             }
             .go {
               margin-left: 1rem;
               background-color: black;
               color: white;
-              border-radius: 100%;
-              width: 2rem;
-              height: 2rem;
+              border-radius: 50%;
+              min-width: 2rem;
+              min-height: 2rem;
               text-align: center;
-              text;
+              vertical-align: sub;
               text-decoration: none;
               border: 2px solid white;
+              padding-top: 0.33rem;
             }
       }
 }
