@@ -13,10 +13,6 @@ import Header from '../components/header.js';
 
 function App() {
   return (
-<<<<<<< HEAD
-    <h1>Home page</h1>
-    
-=======
     <div className="app">
       <BrowserRouter>
         <Header />
@@ -32,7 +28,6 @@ function App() {
         <Footer />
       </BrowserRouter>
     </div>
->>>>>>> 1fe5c2c67c27ac80e894567f83e106cfc9e58777
   );
 }
 
