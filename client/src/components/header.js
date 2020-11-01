@@ -12,7 +12,6 @@ const imageName = 'logo_silver.png';
  */
 
 const Header = () => {
-  const imageName = './assets/backgrounds/logo_silver.png';
   return (
     <header>
       <Link to="/home">

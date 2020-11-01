@@ -1,5 +1,5 @@
 import React from 'react';
-import AlbumItem from '../components/albumitem.js';
+import AlbumContainer from '../components/albumContainer.js';
 
 const Home = () => {
   return (
@@ -8,10 +8,7 @@ const Home = () => {
         <div className="left">
           <h4>CHOOSE ALBUMS TO START YOUR FAVOURITE COLLECTION:</h4>
         </div>
-        <div className="wrapper-album">
-          <AlbumItem />
-          <AlbumItem />
-        </div>
+        < AlbumContainer />     
         <div className="right">
           <h4>GO TO COLLECTION</h4>
           <a href="/collection" className="go">
@@ -22,7 +19,6 @@ const Home = () => {
     </>
   );
 };
-
 export default Home;
 
 //modelo de album
