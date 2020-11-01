@@ -1,7 +1,11 @@
 .playlist{
- min-height: 90vh;
- color: white;
- background-image: url('../assets/backgrounds/rusted.png');
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+  background-image: url('../assets/backgrounds/rusted.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
