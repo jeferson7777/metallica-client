@@ -1,15 +1,7 @@
 import React from 'react';
+import AlbumItem from '../components/albumitem.js';
 
-/* So if you had images in the public folder like: /public/articleImages/article2Image.png,
- you could use the url style attribute:
-const imageName = 'article2Image.png';
-<div style={{ backgroundImage: `url('/articleImages/${imageName}')` }}>
-  ...
-</div>
-<img src={`/articleImages/${imageName}`} />
- */
 const Home = () => {
-  const imageName = 'killem_all.png';
   return (
     <>
       <main className="container home">
@@ -17,14 +9,8 @@ const Home = () => {
           <h4>CHOOSE ALBUMS TO START YOUR FAVOURITE COLLECTION:</h4>
         </div>
         <div className="wrapper-album">
-          <article className="album">
-            <div className="pict"></div>
-            <h5>KILL 'EM ALL</h5>
-          </article>
-          <article className="album">
-            <div className="pict"></div>
-            <h5>KILL 'EM ALL</h5>
-          </article>
+          <AlbumItem />
+          <AlbumItem />
         </div>
         <div className="right">
           <h4>GO TO COLLECTION</h4>
