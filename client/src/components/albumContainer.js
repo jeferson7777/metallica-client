@@ -1,11 +1,19 @@
 const AlbumContainer = () => {
-
-
   return (
     <div>
-      <form className="wrapper-album">
+      <form
+        method="post"
+        action="/"
+       //onSubmit={handleSubmit}
+        className="wrapper-album"
+      >
         <article className="album">
-          <button type="submit" className="favorite">
+          <button
+            type="submit"
+            //value={albums.name}
+            //onChange={handleChange}
+            className="favorite"
+          >
             ADD TO COLLECTION
           </button>
           <div className="pict kill-em-all"></div>
@@ -87,12 +95,3 @@ const AlbumContainer = () => {
 };
 
 export default AlbumContainer;
-
-/*     return(
-    {
-      music.forEach(function (value, index, array) {
-          <h1>{value}</h1>
-       })
-      }
-    );
- */
